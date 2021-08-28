@@ -19,10 +19,10 @@
                 <el-table-column prop="name" label="用例名称" width="250">
                 </el-table-column>
 
-                <el-table-column prop="interface.project" label="所属项目" width="250">
+                <el-table-column prop="interfaces.projects" label="所属项目" width="250">
                 </el-table-column>
 
-                <el-table-column prop="interface.name" label="所属接口" width="250">
+                <el-table-column prop="interfaces.name" label="所属接口" width="250">
                 </el-table-column>
 
                 <el-table-column prop="author" label="测试人员" width="100" align="center">

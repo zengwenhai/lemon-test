@@ -84,7 +84,7 @@
                     <!--<div class="form-box">-->
                         <el-form style="margin: 0 0 0 10px">
                             <el-form-item>
-                                <el-input placeholder="Enter request URL"
+                                <el-input @input='$forceUpdate' placeholder="Enter request URL"
                                           v-model="apiMsgData.url"
                                           class="input-with-select"
                                           style="width: 80%;margin-right: 5px">
@@ -982,6 +982,7 @@
             getConfTestcaseByInterfaceID(interface_id) {
                 configures_by_interface_id(interface_id)
                     .then((response) => {
+                        // console.log(response.data);
                         this.configures = response.data;
                     })
                     .catch(error => {

@@ -32,6 +32,7 @@ axios.interceptors.response.use(
       case 403:
         // console.log('您没有该操作权限');
         router.push({'name': '403'});
+        router.push({'path': '/login'});
           break;
       case 500:
           console.log('服务器异常');

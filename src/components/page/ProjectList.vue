@@ -11,6 +11,7 @@
                 <el-button type="primary" icon="el-icon-delete" class="handle-del mr10" @click="delAll">批量删除</el-button>
 
                 <el-input v-model="select_word" placeholder="输入筛选关键词" class="handle-input mr10"></el-input>
+                <el-button type="primary">查询</el-button>
 
             </div>
             <el-table :data="data" border class="table" ref="multipleTable" @selection-change="handleSelectionChange" stripe>
