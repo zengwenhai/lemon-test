@@ -244,7 +244,7 @@
 
                 let datas = {
                     "name": this.configure_name,           // 配置名称
-                    "interface": {
+                    "interfaces": {
                         "pid": this.selected_project_id,      // 项目ID
                         "iid": this.selected_interface_id,      // 接口ID
                     },

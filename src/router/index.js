@@ -168,14 +168,14 @@ let router = new Router({
                     path: '/404',
                     // component: resolve => require(['../components/page/404.vue'], resolve),
                     component: ()  => import('../components/page/404'),
-                    meta: { title: '404' },
+                    meta: { title: '自动化平台' },
                     name: '404'
                 },
                 {
                     path: '/403',
                     // component: resolve => require(['../components/page/403.vue'], resolve),
                     component: () => import('../components/page/403'),
-                    meta: { title: '403' },
+                    meta: { title: '自动化平台' },
                     name: '403'
                 },
             ]

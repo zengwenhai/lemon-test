@@ -258,7 +258,7 @@
 
                 let datas = {
                     "name": this.configure_name,           // 配置名称
-                    "interface": {
+                    "interfaces": {
                         "pid": this.selected_project_id,      // 项目ID
                         "iid": this.selected_interface_id,      // 接口ID
                     },
@@ -301,6 +301,8 @@
                         this.editVisible = false;
                         // let _this = this;
                         this.$message.success(`更新成功`);
+                        // 更新成功跳转到配置列表页面
+                        this.$router.push({'name': 'configures_list'})
                         // 1秒钟之后, 执行刷新
                         // setInterval(function () {
                         //     _this.$router.go();
